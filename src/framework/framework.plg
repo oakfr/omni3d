@@ -1,0 +1,212 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: vision_atlas - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\koch\LOCALS~1\Temp\RSP333.tmp" with contents
+[
+/nologo /MDd /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/vision_atlas.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\omni3d\vision_atlas\ProjectionFunc.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\koch\LOCALS~1\Temp\RSP333.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\src\lib\vision_atlasR.lib"  .\Release\ImageEdge.obj .\Release\ProjCov.obj .\Release\ProjectionFunc.obj "
+<h3>Output Window</h3>
+Compiling...
+ProjectionFunc.cpp
+Creating library...
+<h3>
+--------------------Configuration: linear - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\koch\LOCALS~1\Temp\RSP334.tmp" with contents
+[
+/nologo /MDd /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/linear.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\omni3d\src\math\linear\linear.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\koch\LOCALS~1\Temp\RSP334.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\lib\linearR.lib"  .\Release\linear.obj "
+<h3>Output Window</h3>
+Compiling...
+linear.cpp
+Creating library...
+<h3>
+--------------------Configuration: math - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\koch\LOCALS~1\Temp\RSP335.tmp" with contents
+[
+/nologo /MDd /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/math.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\omni3d\src\math\cammath.cpp"
+"C:\omni3d\src\math\histogram.cpp"
+"C:\omni3d\src\math\impmath.cpp"
+"C:\omni3d\src\math\my_math.cpp"
+"C:\omni3d\src\math\numerical.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\koch\LOCALS~1\Temp\RSP335.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\lib\mathR.lib"  .\Release\cammath.obj .\Release\histogram.obj .\Release\impmath.obj .\Release\my_math.obj .\Release\numerical.obj "
+<h3>Output Window</h3>
+Compiling...
+cammath.cpp
+histogram.cpp
+impmath.cpp
+my_math.cpp
+numerical.cpp
+Creating library...
+<h3>
+--------------------Configuration: database - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\koch\LOCALS~1\Temp\RSP336.tmp" with contents
+[
+/nologo /MDd /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/database.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\omni3d\src\database\database.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\koch\LOCALS~1\Temp\RSP336.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\lib\databaseR.lib"  .\Release\database.obj "
+<h3>Output Window</h3>
+Compiling...
+database.cpp
+Magick lib static interface
+Magick module static interface
+MagickWand lib static interface
+MagickWand module static interface
+Magick++ lib static interface
+Creating library...
+<h3>
+--------------------Configuration: fast - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\koch\LOCALS~1\Temp\RSP337.tmp" with contents
+[
+/nologo /MDd /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/fast.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\omni3d\src\fast\fast_11.cpp"
+"C:\omni3d\src\fast\fast_9.cpp"
+"C:\omni3d\src\fast\nonmax.cpp"
+"C:\omni3d\src\fast\tracker.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\koch\LOCALS~1\Temp\RSP337.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\lib\fast.lib"  .\Release\fast_11.obj .\Release\fast_9.obj .\Release\nonmax.obj .\Release\tracker.obj "
+<h3>Output Window</h3>
+Compiling...
+fast_11.cpp
+fast_9.cpp
+nonmax.cpp
+tracker.cpp
+Creating library...
+<h3>
+--------------------Configuration: sift - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\koch\LOCALS~1\Temp\RSP338.tmp" with contents
+[
+/nologo /MDd /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"sift___Win32_Release/sift.pch" /YX /Fo"sift___Win32_Release/" /Fd"sift___Win32_Release/" /FD /c 
+"C:\omni3d\src\sift\key.cpp"
+"C:\omni3d\src\sift\sift.cpp"
+"C:\omni3d\src\sift\sift_util.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\koch\LOCALS~1\Temp\RSP338.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\lib\siftR.lib"  .\sift___Win32_Release\key.obj .\sift___Win32_Release\sift.obj .\sift___Win32_Release\sift_util.obj "
+<h3>Output Window</h3>
+Compiling...
+key.cpp
+sift.cpp
+sift_util.cpp
+Creating library...
+<h3>
+--------------------Configuration: framework - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\koch\LOCALS~1\Temp\RSP339.tmp" with contents
+[
+/nologo /MDd /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Release/" /Fp"Release/framework.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\omni3d\src\framework\callback.cpp"
+"C:\omni3d\src\framework\controlbar.cpp"
+"C:\omni3d\src\framework\display.cpp"
+"C:\omni3d\src\framework\edgetracker.cpp"
+"C:\omni3d\src\framework\main.cpp"
+"C:\omni3d\src\framework\maintenance.cpp"
+"C:\omni3d\src\framework\mask.cpp"
+"C:\omni3d\src\framework\pose.cpp"
+"C:\omni3d\src\framework\recovery.cpp"
+"C:\omni3d\src\framework\startup.cpp"
+"C:\omni3d\src\framework\state.cpp"
+"C:\omni3d\src\framework\synthetic.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\koch\LOCALS~1\Temp\RSP339.tmp" 
+Creating temporary file "C:\DOCUME~1\koch\LOCALS~1\Temp\RSP33A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib wsock32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib opengl32.lib comctl32.lib geomR.lib cxcore.lib cv.lib highgui.lib vl.lib fltk.lib fltkgl.lib fltkimages.lib glu32.lib glaux.lib databaseR.lib toolboxR.lib mathR.lib linearR.lib modelR.lib signatureR.lib rudeconfig.lib timerR.lib my_ladybugR.lib ladybug.lib cameraR.lib vision_atlasR.lib libgsl.a libgslcblas.a siftR.lib xsens.lib /nologo /subsystem:console /incremental:no /pdb:"Release/framework.pdb" /machine:I386 /out:"Release/framework.exe" 
+.\Release\callback.obj
+.\Release\controlbar.obj
+.\Release\display.obj
+.\Release\edgetracker.obj
+.\Release\main.obj
+.\Release\maintenance.obj
+.\Release\mask.obj
+.\Release\pose.obj
+.\Release\recovery.obj
+.\Release\startup.obj
+.\Release\state.obj
+.\Release\synthetic.obj
+\omni3d\src\lib\toolboxR.lib
+\omni3d\src\lib\signatureR.lib
+\omni3d\src\lib\modelR.lib
+\omni3d\src\lib\viewerR.lib
+\omni3d\src\lib\my_ladybugR.lib
+\omni3d\src\lib\cameraR.lib
+\omni3d\src\lib\geomR.lib
+\omni3d\src\lib\timerR.lib
+\omni3d\src\lib\vision_atlasR.lib
+\omni3d\src\lib\linearR.lib
+\omni3d\src\lib\mathR.lib
+\omni3d\src\lib\databaseR.lib
+\omni3d\src\lib\fast.lib
+\omni3d\src\lib\siftR.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\koch\LOCALS~1\Temp\RSP33A.tmp"
+<h3>Output Window</h3>
+Compiling...
+callback.cpp
+controlbar.cpp
+display.cpp
+edgetracker.cpp
+main.cpp
+maintenance.cpp
+mask.cpp
+pose.cpp
+recovery.cpp
+startup.cpp
+state.cpp
+synthetic.cpp
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+LINK : warning LNK4098: defaultlib "MSVCRT" conflicts with use of other libs; use /NODEFAULTLIB:library
+Creating temporary file "C:\DOCUME~1\koch\LOCALS~1\Temp\RSP33C.tmp" with contents
+[
+/nologo /o"Release/framework.bsc" 
+.\Release\callback.sbr
+.\Release\controlbar.sbr
+.\Release\display.sbr
+.\Release\edgetracker.sbr
+.\Release\main.sbr
+.\Release\maintenance.sbr
+.\Release\mask.sbr
+.\Release\pose.sbr
+.\Release\recovery.sbr
+.\Release\startup.sbr
+.\Release\state.sbr
+.\Release\synthetic.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\koch\LOCALS~1\Temp\RSP33C.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+framework.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

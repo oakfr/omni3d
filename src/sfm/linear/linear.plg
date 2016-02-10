@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: linear - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\koch\LOCALS~1\Temp\RSP42D.tmp" with contents
+[
+/nologo /out:"Debug\linear.lib" 
+.\Debug\d_sign.obj
+.\Debug\daxpy.obj
+.\Debug\ddot.obj
+.\Debug\dnrm2.obj
+.\Debug\drot.obj
+.\Debug\drotg.obj
+.\Debug\dscal.obj
+.\Debug\dsvdc.obj
+.\Debug\dswap.obj
+.\Debug\ev.obj
+.\Debug\pythag.obj
+.\Debug\rs.obj
+.\Debug\svd.obj
+.\Debug\tql1.obj
+.\Debug\tql2.obj
+.\Debug\tred1.obj
+.\Debug\tred2.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\koch\LOCALS~1\Temp\RSP42D.tmp"
+<h3>Output Window</h3>
+Creating library...
+
+
+
+<h3>Results</h3>
+linear.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

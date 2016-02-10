@@ -1,0 +1,242 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "camera"=..\camera\camera.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "database"=..\database\database.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "fast"=..\fast\fast.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "framework"=.\framework.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name util
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name signature
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name model
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name viewer
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ladybug
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name camera
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name geom
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name timer
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name vision_atlas
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name linear
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name math
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name database
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name fast
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name sift
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name xsens
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "geom"=..\geom\geom.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ladybug"=..\ladybug\ladybug.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "linear"=..\math\linear\linear.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "math"=..\math\math.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "model"=..\model\model.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "sift"=..\sift\sift.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "signature"=..\signature\signature.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "timer"=..\timer\timer.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "util"=..\util\util.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "viewer"=..\viewer\viewer.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "vision_atlas"=..\..\vision_atlas\vision_atlas.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

@@ -1,0 +1,35 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: util - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\koch.AD\LOCALS~1\Temp\RSP4C.tmp" with contents
+[
+/nologo /MDd /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/util.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\koch\src\util\draw.cpp"
+"C:\koch\src\util\file.cpp"
+"C:\koch\src\util\fposition.cpp"
+"C:\koch\src\util\simpletiff.cpp"
+"C:\koch\src\util\util.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\koch.AD\LOCALS~1\Temp\RSP4C.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\lib\toolboxR.lib"  .\Release\draw.obj .\Release\file.obj .\Release\fposition.obj .\Release\simpletiff.obj .\Release\util.obj "
+<h3>Output Window</h3>
+Compiling...
+draw.cpp
+file.cpp
+fposition.cpp
+simpletiff.cpp
+util.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+toolboxR.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

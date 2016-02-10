@@ -1,0 +1,20 @@
+/camera	: camera model, projection and rectification
+/database	: database of sequences for off-line demo
+/fast		: fast feature detector and tracker
+/framework	: main framework of the project
+/geom		: basic geometric objects (vertices, edges, faces, etc.)
+/include	: basic includes (colors)
+/ladybug	: code for interacting with the Ladybug
+/lib		: libraries
+/math		: basic math
+/model	: 3D model operations
+/scripts	: a few scripts for Ladybug images management
+/sfm		: SFM code (inactive)
+/signature	: Lookup Table for visibility precomputation
+/timer	: performance timer
+/util		: a bunch of useful functions
+/viewer	: generic openGL viewer
+/viscomp	: standalone application for visibility precomputation
+
+
+

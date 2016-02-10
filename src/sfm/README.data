@@ -1,0 +1,139 @@
+*****************************************************************
+README.data file.
+*****************************************************************
+
+The DATA directory contains three sample data sets which were used to test
+the Structure from Motion algorithm presented in 
+
+"Structure and Motion from Line Segments in Multiple Images"
+by Camillo J. Taylor and David J. Kriegman. 
+Center for Systems Science Technical Report No. 9402b, January 1994.
+
+You can obtain these files by anonymous ftp from daneel.eng.yale.edu.
+This README file also document the format of the input.
+
+The goal of this work was to derive an algorithm that could be used to
+reconstruct the 3D geometry of a rigid scene composed of a number of
+straight line features using the measurements obtained from a set of
+calibrated cameras at unknown positions. The algorithm we have
+implemented recovers the positions of the features and the positions
+of the cameras up to a scale factor.
+
+*****************************************************************
+
+Each directory contains a number of image files stored in the Utah
+Raster Toolkit RLE format. This format is recognized by xv and a
+number of other image processing programs.
+
+The edge segments in these images were extracted automatically using a
+variant of the Canny edge finder. Correspondences between edges in
+various frames were established by hand.
+
+*******************************************************************
+		Calibration and Input Coordinate
+
+Given the coordinates of a point in the image in pixel coordinates
+(X,Y),  the coordinates of the corresponding point on the physical
+image plane of the camera should be computed  in millimeters (u, v)
+assuming that the focal length is 1mm.  Thus, the coordinates should
+be normalized (u,v) should be normalized by dividing by the focal length.
+
+Using our calibration procedure, we obtain the center of projection in
+the image (Cx, Cy) and the scale factors (Sx, Sy) in the x and y
+directions respectively. A simple affine model relates the image
+coordinates (X, Y) to the calibrated coordinates (u, v).
+
+u = Sx*(X - Cx)
+v = Sy*(Y - Cy)
+
+Note that these equations can be modified to reflect the effects of
+radial distortion on the image measurements. These effects were not
+significant in our imaging system so they weren't modeled.
+
+
+***********************************************************************
+			Input Format, the log file 
+
+
+All of the information obtained from the image sets is stored in a set
+of log files (look at the files with the ".log" extension). Each log
+file is the concatenation of a number of files which represent the
+edge data obtained from the individual images. These edge files are
+ASCII files with the following format.
+
+
+Part 1 : Header information
+
+# Automatically generated edge file
+#
+#+       alpha 0.0 beta -30.0   < estimate for orientation of camera, expressed
+#                                 in the coordinate system of the first camera
+#
+# format :
+# index    u1    v1    u2    v2 
+#
+ 
+index < the index field is used to record correspondences between edges in
+        various frames.  Segments that are the image of the same
+        physical edge should have the same index.  This could be done
+        either manually or via tracking.
+
+(u1, v1) - (u2, v2) < calibrated coordinates of edge end points
+
+Part 2: Data
+
+    1  -7.35887e-02  -2.80177e-01  -2.09358e-01  -1.33429e-01
+    3  -4.00831e-02  -2.80147e-01  -5.00447e-02  -4.72679e-02
+    7   2.64659e-01  -1.80358e-01   3.04095e-01   1.73160e-01
+   27   1.36056e-01  -6.19625e-02   1.38982e-01   1.60514e-02
+   34   1.59497e-01  -5.60074e-02   1.64788e-01   2.59709e-02
+    3  -4.82710e-02  -4.60208e-02  -5.35922e-02   1.14743e-01
+
+              etc. etc.
+
+***************************************************************************
+		Obtaining 3D reconstructions and the Output
+
+These log files can be processed using the SFM program which should
+also be available via anonymous ftp from this site. For example, to
+produce a 3D reconstruction from the measurements obtained from the
+ELI_CUBE data set we would type
+
+"sfm eli_cube.log eli_cube.3D"
+
+This command would produce the binary output file eli_cube.3D which
+would contain the reconstruction results.
+
+The output of the algorithm contains the coordinates in mm of the
+endpoints of the reconstructed line segments in the frame of the first
+camera location.  Note the the underlying 3D line can be very
+accurately determined, but that the actual endpoint coordinates are
+simply taken to be the extrema of projecting the measured segments
+back onto the infinite 3D line.  Each camera location is given by the
+coordinates of the origin in mm, and a quaternion to give orientation.
+The output is a binary file with rather simple format.  The function
+ReadStructureFile in file LogFile.c can be used in program to read the
+output format, and the data structures are documented in SFM.h.
+
+If you want to display these results, you will have to write your own
+program to read and display this output file. (I've written such an
+application for Silicon Graphics platforms that relies on the GL
+library for graphics primitives and the FORMS library for the user
+interface.)
+
+*********************************************************************
+
+Camillo J. Taylor
+
+Postdoctoral researcher / lecturer EE125 "Introduction to Robotics"
+
+email: camillo@robotics.eecs.berkeley.edu
+
+Robotics Lab
+Department of Electrical Engineering and Computer Science
+University of California, Berkeley
+
+Cory Hall, Rm 502
+(510)-642-4315
+
+*********************************************************************

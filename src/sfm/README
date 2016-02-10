@@ -1,0 +1,90 @@
+*****************************************************************
+README file.
+*****************************************************************
+
+This directory contains the code that was used to implement the 3D
+structure from motion algorithm described in
+
+"Structure and Motion from Line Segments in Multiple Images"
+by Camillo J. Taylor and David J. Kriegman. 
+Center for Systems Science Technical Report No. 9402b, January 1994.
+
+The goal of this work was to derive an algorithm that could be used to
+reconstruct the 3D geometry of a rigid scene composed of a number of
+straight line features using  measured line segments obtained from a set of
+calibrated cameras at unknown positions. The algorithm we have
+implemented recovers the positions of the features and the positions
+of the cameras up to a scale factor.
+
+*****************************************************************
+
+Most of the files in this directory contain the code that is used to
+implement the "sfm" program. This program takes as input an ASCII file
+which contains the image measurements obtained from the calibrated
+cameras and produces as output a binary file which contains the
+results of the reconstruction procedure.
+
+A tar file should be available on this ftp site (daneel.eng.yale.edu)
+which contains a number of sample data sets on which this sfm program
+can be run.
+
+The file README.data documents the format of the input file and the
+output file.
+
+This directory also contains the file LH88.c which implements the
+linear structure from motion algorithm proposed by Weng, Liu, Huang
+and Ahuja in their 1988 CVPR paper. This algorithm utilizes the
+LINPACK and EISPACK routines in the subdirectory
+LINPACK-EISPACK-ROUTINES. These routines were downloaded from an ftp
+site and converted from FORTRAN to C with the f2c program.
+
+The file expt7.c implements a straightforward simulation experiment
+which compares the performance of the linear algorithm to that of the
+Taylor, Kriegman algorithm as the image noise in the data set is
+increased.
+
+*****************************************************************
+ 
+To make the sfm program simply type 
+
+"make sfm"
+
+in this directory.  If you get an compilation error about ranlib,
+comment out the documented line in the Makefile.
+
+To compile expt7 you must first compile the code in the
+LINPACK-EISPACK-ROUTINES subdirectory by going to that directory and
+typing
+ 
+"make svd.a"
+
+and 
+
+"make ev.a"
+
+Once this has been done you can make the expt7 executable by typing
+
+"make expt7"
+
+in this directory.
+
+This code has been compiled successfully on Sparcstations running
+SunOS 4.1.3 and on Silicon Graphics workstations running IRIX 4.0.5
+and higher.
+
+*********************************************************************
+
+Camillo J. Taylor
+
+Postdoctoral researcher / lecturer EE125 "Introduction to Robotics"
+
+email: camillo@robotics.eecs.berkeley.edu
+
+Robotics Lab
+Department of Electrical Engineering and Computer Science
+University of California, Berkeley
+
+Cory Hall, Rm 502
+(510)-642-4315
+
+*********************************************************************

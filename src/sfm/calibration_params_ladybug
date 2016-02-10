@@ -1,0 +1,16 @@
+/*
+ * Automatically generated calibration header file
+ */
+ 
+/* FOCAL_LENGTH : focal length of the lens in mm.*/
+#define FOCAL_LENGTH          2.44
+/* KAPPA : The radial distortion term in mm^-2 */
+#define KAPPA          0.0000000 
+/* SX : The pixel width in mm. */
+#define SX             0.00465
+/* SY : The pixel height in mm. */
+#define SY             0.00465
+/* CX : The image x-center in pixels */
+#define CX           543.24046   
+/* CY : The image y-center in pixels */
+#define CY            359.13823
